@@ -6,7 +6,9 @@ plugins {
 android {
     namespace = "com.example.weatherapp"
     compileSdk = 33
-
+buildFeatures{
+    viewBinding=true;
+}
     defaultConfig {
         applicationId = "com.example.weatherapp"
         minSdk = 24
@@ -37,6 +39,8 @@ android {
 
 dependencies {
     implementation ("com.airbnb.android:lottie:6.1.0")
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
     implementation("androidx.core:core-ktx:1.9.0")
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.9.0")
